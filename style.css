@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+
+}
+
+/* header start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #f5c072;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transform: 0.3s ease;
+}
+#navbar li a:hover, 
+#navbar li a.active{
+    color: #3600fa;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #3600fa;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile-users{
+    display: none;
+    align-items: center;
+}
+
+#exit{
+    display: none;
+    align-items: center;
+}
+
+.main-1{
+    background-image: url(src/Campus\ Overview_2.png);
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main{
+    position: relative;
+    min-height: 40vh;
+    width: 100%;
+    background: #f5c072;
+}
+
+#main h4{
+    padding: 20px;
+    margin: 20px;
+}
+
+#main h2{
+    padding: 20px;
+    margin: 20px;
+}
+
+#main h1{
+    color: #3600fa;
+    padding: 20px;
+    margin: 20px;
+}
+
+#main button{
+    padding: 20px;
+    font-size: 10px;
+}
+#main p{
+    padding: 20px;
+    margin: 20px;
+    text-justify: auto;
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: x-large;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f5c072;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #817e7e;
+}
+
+#newsletter p span{
+
+    color: #3600fa;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+#newsletter .form{
+    display: inline-block;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter .button-1{
+    padding: 0 1.25em;
+    height: 3.125rem;
+    width: 20%;
+    background-color: #3600fa;
+    outline: none;
+    border: 1px solid transparent ;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+footer { 
+    background-color: #f5c072;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer a:hover{
+    color: #3600fa;
+}
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+footer .social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+footer .social a{
+    padding: 5px;
+} 
+
+footer .copyright p{
+    color: #222;
+    font-size: 20px;
+}
+
+footer .install-app .col-row img{
+    border: 1px solid #3600fa;
+    border-radius: 6px;
+
+}
+
+footer .install-app img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* LoginPage */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(src/Campus\ Overview_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form_box{
+    position: relative;
+    width: 500px;
+    height: 550px;
+    background: #f5c072;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2-login{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.h2-signup{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+.inputbox{
+    position: relative;
+    margin: 50px 0;
+    width: 350px;
+    border-bottom: 4px solid #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    color: #222;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-cla:focus ~ label,
+.input-cla:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: #fff;
+    outline: #fff;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #222;
+}
+
+ 
+.remember{
+    margin: -15px 0 15px;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.remember label input{
+    margin-right: 5px;
+}
+
+.remember label a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember label a:hover{
+    color: #3600fa;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.logbutton{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.logbutton:hover{
+    color: #3600fa;
+    transition: 0.5s;
+}
+
+.reg{
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.reg p a{
+    text-decoration: none;
+    color: #3600fa;
+    font-weight: 600;
+}
+
+/* Services section */
+
+.whole-service{
+    background: #f5c072;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.whole-service .serv-heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+}
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .service {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .service img {
+    width: 100%;
+  }
+  .service h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .service p {
+    font-style: italic;
+  }
+  .service a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btnp-serv{
+    margin-top: 10px;
+    display: inline-block;
+    background: #f5c072;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+  }
+
+  .btnp-serv:hover{
+    letter-spacing: 1px;
+  }
+
+  .whole-service .services-grid .service:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+  }
+
+  /* registration */
+
+  .reg-whole{
+    background: #f5c072;
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=submit]:disabled{
+    background-color: lightgray;
+    color: #aaa;
+  }
+
+  input[type=checkbox]:checked ~ #submit-btn{
+    background-color: #f5c072;
+  }
+
+  input[type=checkbox]:checked ~ #submit-btn:enabled{
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:not(:checked) ~ #submit-btn:enabled{
+    cursor: not-allowed;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* About Page */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(src/Campus\ Overview_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about_box{
+    position: relative;
+    width: 500px;
+    height: 550px;
+    background: #f5c072;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2-about{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.about-cont p{
+    margin-top: 10px;
+    padding: 15px;
+}
+
+/* Contact Page */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(src/Campus\ Overview_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact_box{
+    position: relative;
+    width: 500px;
+    height: 550px;
+    background: #f5c072;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2-contact{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-cont p{
+    margin-top: 10px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #f3dab4;
+        box-shadow: 0 40px 60x rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 20px;
+    }
+    #mobile-users{
+        display: flex;
+        align-items: center;
+    }
+
+    #exit{
+        
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        display: contents;
+        color: #000;
+        font-size: 24px;
+    }
+
+    #newsletter {
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        background-color: #f5c072;
+    }
+
+    #newsletter .button-1{
+        padding: 0 1.25em;
+        height: 3.125rem;
+        width: 50%;
+        background-color: #3600fa;
+        outline: none;
+        border: 1px solid transparent ;
+        border-radius: 4px;
+        color: #fff;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+

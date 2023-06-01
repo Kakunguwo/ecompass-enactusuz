@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-compass Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h3>E-compass Registration Form</h3>
+
+    <div class="container">
+      <form action="#">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name.." required autocomplete="off">
+  
+        <label for="email">Email address</label>
+        <input type="text" id="email" name="email" placeholder="Your Email address.." required autocomplete="off">
+  
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required autocomplete="off">
+
+        <label for="student">Are you a Student</label>
+        <select id="student" name="student" id="" required autocomplete="off">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        
+        <label for="nationid">National ID</label>
+        <input type="text" id="nationid" name="nationid" required autocomplete="off">
+        
+        <label for="regnum">Student Registration Number</label>
+        <input type="text" id="regnum" name="regnum" autocomplete="off">
+
+               
+  
+        <label for="resident">Resident or Non-Resident</label>
+        <select id="resident" name="resident" required autocomplete="off">
+          <option value="resident">Resident</option>
+          <option value="non-resident">Non-Resident</option>
+        </select>
+  
+        <label for="customer">Customer or Service Provider</label>
+        <select id="customer" name="customer" required autocomplete="off">
+          <option value="customer">Customer</option>
+          <option value="service provider">Service Provider</option>
+        </select>
+
+        <label for="terms-checkbox">Do you agree to the terms and conditions? <a href="terms.html">Terms and Conditions</a></label>
+        <input type="checkbox" id="terms-checkbox" name="terms-checkbox" required>
+
+        <br>
+
+        <input type="submit" value="Submit" id="submit-btn" disabled>
+
+        <div class="reg">
+          <p>Already have an account <a href="login.html">LogIn Here</a></p>
+        </div>
+        <div class="reg">
+          <p>If you submitted your can proceed to sign-up <a href="signup.html">SIGN-UP Here</a></p>
+        </div>
+  
+      </form>
+    </div>
+    
+</body>
+</html>
